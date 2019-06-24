@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background: #F2F2F2;
+}
+
+.container {
+  background: #F2F2F2;
+  width: 100vw;
+  padding-top: 136px;
+}
+
+header h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #45852D;
+  margin-bottom: 36px;
+}
+
+.showBlocks {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: minmax(379px, 30vw) minmax(379px, 30vw) minmax(379px, 30vw);
+      grid-template-columns: minmax(379px, 30vw) minmax(379px, 30vw) minmax(379px, 30vw);
+  -ms-grid-rows: (381px)[3];
+      grid-template-rows: repeat(3, 381px);
+  grid-gap: 22px;
+  width: 100vw;
+}
+
+.hideBlocks {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: minmax(379px, 30vw) minmax(379px, 30vw) minmax(379px, 30vw);
+      grid-template-columns: minmax(379px, 30vw) minmax(379px, 30vw) minmax(379px, 30vw);
+  -ms-grid-rows: (381px)[1];
+      grid-template-rows: repeat(1, 381px);
+  grid-gap: 22px;
+  width: 100vw;
+}
+
+article {
+  background: #F8F8F8;
+  border: 1px solid #D8D8D8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+article .housePhoto {
+  position: relative;
+  height: 228px;
+  background-position: center;
+  background-size: cover !important;
+}
+
+article .housePhoto mark {
+  background: #006F79;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+article .textCard {
+  padding: 20px 20px 17px 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #363636;
+}
+
+article .textCard h2 {
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 2px;
+}
+
+article .textCard .address {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+article .textCard .price {
+  margin-bottom: 7px;
+}
+
+article .textCard .price span {
+  font-weight: bold;
+}
+
+article .textCard .note {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+article:nth-child(3n) mark {
+  background: #EC6608;
+}
+
+.houseCard-1 .housePhoto,
+.houseCard-4 .housePhoto,
+.houseCard-7 .housePhoto {
+  background: url(../img/house1.jpg);
+}
+
+.houseCard-1 .housePhoto a,
+.houseCard-4 .housePhoto a,
+.houseCard-7 .housePhoto a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.houseCard-2 .housePhoto,
+.houseCard-5 .housePhoto,
+.houseCard-8 .housePhoto {
+  background: url(../img/house2.jpg);
+}
+
+.houseCard-2 .housePhoto a,
+.houseCard-5 .housePhoto a,
+.houseCard-8 .housePhoto a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.houseCard-3 .housePhoto,
+.houseCard-6 .housePhoto,
+.houseCard-9 .housePhoto {
+  background: url(../img/house3.jpg);
+}
+
+.houseCard-3 .housePhoto a,
+.houseCard-6 .housePhoto a,
+.houseCard-9 .housePhoto a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  padding: 50px 0;
+}
+
+footer .btn {
+  margin: 0 auto;
+  background: url(../img/Chevron.svg);
+  background: url(../img/Chevron.svg) 88% 50% no-repeat;
+  display: block;
+  height: 50px;
+  width: 150px;
+  border: 1px solid #D8D8D8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 48px;
+  color: #363636;
+  text-align: center;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+footer .btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 4px 8px gray;
+          box-shadow: 0 4px 8px gray;
+}
+
+.hide {
+  display: none;
+}
+
+.seeMore {
+  content: "See more";
+}
+
+.showLess {
+  content: "Show less";
+}
+
+@media (max-width: 1230px) {
+  .hideBlocks {
+    -ms-grid-columns: minmax(379px, 45vw) minmax(379px, 45vw);
+        grid-template-columns: minmax(379px, 45vw) minmax(379px, 45vw);
+    -ms-grid-rows: (381px)[2];
+        grid-template-rows: repeat(2, 381px);
+  }
+  .showBlocks {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: minmax(379px, 45vw) minmax(379px, 45vw);
+        grid-template-columns: minmax(379px, 45vw) minmax(379px, 45vw);
+    -ms-grid-rows: (381px)[3];
+        grid-template-rows: repeat(3, 381px);
+    grid-gap: 22px;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 820px) {
+  .hideBlocks {
+    -ms-grid-columns: minmax(379px, 90vw);
+        grid-template-columns: minmax(379px, 90vw);
+    -ms-grid-rows: (381px)[3];
+        grid-template-rows: repeat(3, 381px);
+  }
+  .showBlocks {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-columns: minmax(379px, 90vw);
+        grid-template-columns: minmax(379px, 90vw);
+    -ms-grid-rows: (381px)[3];
+        grid-template-rows: repeat(3, 381px);
+    grid-gap: 22px;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 769px) {
+  body {
+    text-align: center;
+  }
+  mark {
+    left: 0;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
